@@ -1,6 +1,6 @@
 # Responsive Image Mixin
 
-> This SASS mixin lets you easily create responsive images as via the background-image css-property. It's part of the [awesomeness-framework](awesomeness.intuio.at) developed at [intuio](http://intuio.at/).
+> This SASS mixin lets you easily create responsive images via the background-image css-property. It's part of the [awesomeness-framework](awesomeness.intuio.at) developed at [intuio](http://intuio.at/).
 
 ## Why
 
