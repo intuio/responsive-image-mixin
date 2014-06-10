@@ -1,0 +1,47 @@
+/* line 10, ../_responsive-images.scss */
+.responsive-image__inner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+/* line 6, example.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 12, example.scss */
+#my-oreo-cake {
+  max-height: 249px;
+}
+/* line 42, ../_responsive-images.scss */
+#my-oreo-cake > .responsive-image__inner {
+  background-image: url("oreocake.jpg");
+  padding-bottom: 62.25%;
+  max-width: 400px;
+}
+@media (min-width: 35rem) {
+  /* line 12, example.scss */
+  #my-oreo-cake {
+    max-height: 467px;
+  }
+  /* line 42, ../_responsive-images.scss */
+  #my-oreo-cake > .responsive-image__inner {
+    background-image: url("oreocake--medium.jpg");
+    padding-bottom: 62.26667%;
+    max-width: 750px;
+  }
+}
+@media (min-width: 46.8rem) {
+  /* line 12, example.scss */
+  #my-oreo-cake {
+    max-height: 638px;
+  }
+  /* line 42, ../_responsive-images.scss */
+  #my-oreo-cake > .responsive-image__inner {
+    background-image: url("oreocake--large.jpg");
+    padding-bottom: 62.30469%;
+    max-width: 1024px;
+  }
+}

@@ -1,0 +1,18 @@
+// Load the partials
+@import "breakpoint";
+@import "../responsive-images";
+
+// Set up base fontsize
+html
+{
+    font-size: 62.5%;
+}
+
+// Set up responsive image
+#my-oreo-cake
+{
+    // @include responsive-image(url, width(px), height(px), <breakpoint>);
+    @include responsive-image("oreocake.jpg", 400, 249);
+    @include responsive-image("oreocake--medium.jpg", 750, 467, 35rem);
+    @include responsive-image("oreocake--large.jpg", 1024, 638, 46.8rem);
+}

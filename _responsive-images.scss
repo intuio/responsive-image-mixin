@@ -1,0 +1,48 @@
+//  ---------------------------------------------------------------------------
+//
+//  RESPONSIVE IMAGES
+//
+//  ---------------------------------------------------------------------------
+
+//  = RESPONSIVE IMAGES CLASSES
+//  ---------------------------------------------------------------------------
+
+    .responsive-image__inner
+    {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+    }
+
+//  = RESPONSIVE IMAGES MIXIN
+//  ---------------------------------------------------------------------------
+
+    @mixin responsive-image($url, $width, $height, $breakpoint: "")
+    {
+        // No breakpoint set
+        @if $breakpoint == ""
+        {
+            @include set-background-image($url, $width, $height);
+        }
+        // wrap in breakpoint
+        @else
+        {
+            @include breakpoint($breakpoint)
+            {
+                @include set-background-image($url, $width, $height);
+            }
+        }
+    }
+
+    @mixin set-background-image($url, $width, $height)
+    {
+        max-height: $height + 0px;
+
+        > .responsive-image__inner
+        {
+            background-image: url($url);
+            padding-bottom: ($height / $width) * 100%;
+            max-width: $width + 0px;
+        }
+    }
