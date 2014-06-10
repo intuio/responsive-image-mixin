@@ -21,7 +21,7 @@ You need [compass](http://compass-style.org/) and [breakpoint SASS](http://break
 
 ### SASS
 
-```sass
+```scss
 // Load the partials
 @import "breakpoint";
 @import "responsive-images";
